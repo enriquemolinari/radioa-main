@@ -4,4 +4,5 @@ module radioa.main {
  requires radioa.notifications;
  
  uses userprofile.model.api.RadioListeners;
+ uses userprofile.model.api.UserAuth;
 }
