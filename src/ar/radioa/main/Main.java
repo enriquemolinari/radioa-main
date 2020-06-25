@@ -4,8 +4,8 @@ import java.util.ServiceLoader;
 
 import competition.model.DefaultRadioProgram;
 import competition.persistence.JdbcCompetitionRepository;
+import notifications.infrastructure.BigQueueNotification;
 import notifications.model.EmailNotification;
-import notifications.persistence.BigQueueNotification;
 import userprofile.model.api.RadioListeners;
 import userprofile.model.api.UserAuth;
 
