@@ -3,10 +3,9 @@ package ar.radioa.main;
 import java.util.ServiceLoader;
 
 import competition.model.DefaultRadioProgram;
+import competition.model.NotificationRadioProgram;
 import competition.persistence.JdbcCompetitionRepository;
 import notifications.infrastructure.BigQueueNotification;
-import notifications.infrastructure.EmailVendorProvider;
-import notifications.model.EmailJob;
 import notifications.model.EmailNotification;
 import userprofile.model.api.RadioListeners;
 import userprofile.model.api.UserAuth;
@@ -28,13 +27,18 @@ public class Main {
 //     users.authenticate(user, password)
 //     users.validate(token);
 
-//  var radioProgram = new DefaultRadioProgram(
-//    new JdbcCompetitionRepository(user, pass, connString),
-//    new EmailNotification(
-//      new BigQueueNotification("/home/enrique", "queue"), listeners));
+  var radioProgram = 
+    new NotificationRadioProgram(
+       new DefaultRadioProgram(
+          new JdbcCompetitionRepository(user, pass, connString)
+       ),
+       new EmailNotification(
+          new BigQueueNotification("/home/enrique", "queue"), listeners
+       )
+    );
 
 //  radioProgram.addInscription(1, 1);
-  
+
 //  var job = new EmailJob(new BigQueueNotification("/home/enrique", "queue"), new EmailVendorProvider());
 //  job.sendThemAll();
  }
