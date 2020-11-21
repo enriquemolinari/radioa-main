@@ -14,9 +14,9 @@ public class Main {
 
  public static void main(String[] args) {
 
-  String connString = System.getProperty("conn-string");
-  String user = System.getProperty("user");
-  String pass = System.getProperty("pwd");
+  String connString = System.getProperty("conn-string-comp");
+  String user = System.getProperty("user-comp");
+  String pass = System.getProperty("pwd-comp");
 
   var listeners = ServiceLoader.load(RadioListeners.class).findFirst()
     .get();
