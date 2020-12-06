@@ -1,6 +1,6 @@
 # RadioA - Main Module
 
-This is the Main Java9+ Module of the RadioA sample application written as a demostration of the modular architecture for the book [An Introduction to Software Architecture](https://leanpub.com/introsoftwarearchitecture). See also the others three modules [Notifications Module](https://github.com/enriquemolinari/radioa-notifications), [UserProfile Module](https://github.com/enriquemolinari/radioa-userprofile) and [Competitions Module](https://github.com/enriquemolinari/radioa-competition). 
+This is the Main Java9+ Module of the RadioA sample application written as a demostration of the modular architecture for the book [Coding an Architecture Style](https://leanpub.com/codinganarchitecturestyle). See also the others three modules [Notifications Module](https://github.com/enriquemolinari/radioa-notifications), [UserProfile Module](https://github.com/enriquemolinari/radioa-userprofile) and [Competitions Module](https://github.com/enriquemolinari/radioa-competition). 
 
 You can clone each module project and open them in an IDE. Notifications Module must have in ther modulepath the Competitions and the UserProfile module. While this Main module must have the three module projects in their modulepath.
 
